@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+      <script type="text/javascript" src="js/scripts.js"></script>
+      <script>
+	window.onerror= function(a,b,c) {
+	alert(a+" "+b+" "+c);
+	};
+      </script>
+  </head>
+  <body>
+
+    <h1>SQL Test</h1>
+
+    <h2>Query:</h2>
+    <textarea id="sql" rows=15 cols=100  >3-4*(7-5/8)+1</textarea>
+    
+    <button id="run" type="button" onclick="evaluateExp(document.getElementById('sql').value);">Run</button>
+    <h2>Results</h2>
+    <div id="results"></div>
+  </body>
+</html>		 
